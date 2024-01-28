@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Course Portfolio</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main-header">
+            <div class="left">
+                <span><b>Javascript studio</b></span>
+            </div>
+            <div class="right">
+                <span>Jingwan Liu (Rainy)</span>
+                <span>Parsons School of Design Spring 2024</span>
+            </div>
+        </div>
+        <div class="main-nav">
+            <span id="span1" class="active" onclick="handleNav(1)">Project1</span>
+            <span id="span2" onclick="handleNav(2)">Project2</span>
+            <span id="span3" onclick="handleNav(3)">Project3</span>
+        </div>
+        <div class="main-content">
+            <div id="content1" class="content-box">
+                <div class="box">
+                    <a href="./Project/project1.html" class="box-left">
+                        <div id="project1" class="project-box"></div>
+                    </a>
+                    <div class="box-right">
+                        <span id="name">Changing States</span>
+                        <span id="time">Due: February 29, 2024</span>
+                        <span id="info">An innovative website showcasing dynamic state transitions, exploring binary or spectrum concepts such as day vs. night, messy vs. clean, or temperature gradients, highlighting the transformative nature of web design and the fluidity inherent in user interactions.</span>
+                        <a href="./Project/project1.html" id="about">About...
+                            <img id="arrow" src="./right (1).png" alt="about">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="content2" class="content-box">
+                <div class="box">
+                    <a href="./Project/project2.html" class="box-left">
+                        <div id="project 2" class="project-box"></div>
+                    </a>
+                    <div class="box-right">
+                        <span id="name">Generative Tool</span>
+                        <span id="time">Due: April 4, 2024</span>
+                        <span id="info">Delve into the transformative influence of tools in the creative realm, acknowledging their role as intermediaries between human input and varied outputs, whether physical or digital.  It encourages the development of personalized programming tools, utilizing concepts like variables, loops, and conditionals to artistically interpret user input, mirroring the way traditional artistic tools shape the creative process.</span>
+                        <a href="./Project/project2.html" id="about">About...
+                            <img id="arrow" src="./right (1).png" alt="about">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="content3" class="content-box">
+                <div class="box">
+                    <a href="./Project/project3.html" class="box-left">
+                        <div id="project3" class="project-box"></div>
+                    </a>
+                    <div class="box-right">
+                        <span id="name">Sender Receiver</span>
+                        <span id="time">Due: May 9, 2024</span>
+                        <span id="info">In this project, the goal is to craft a website incorporating an external data feed, utilizing an API or service. The emphasis is on exploring design logic's impact on data interpretation and understanding how users may engage with or be influenced by the live data stream on the site.</span>
+                        <a href="./Project/project3.html" id="about">About...
+                            <img id="arrow" src="./right (1).png" alt="about">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <span id="bottom">Liuj725@newschool.edu</span>
+            <p id="bottom">&copy; 2024 Rainy Liu</p>
+            <span id="bottom">2 W 13th st in room 502</span>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./site.js"></script>
