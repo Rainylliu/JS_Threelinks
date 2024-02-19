@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
 * {
     margin: 0;
@@ -48,7 +47,7 @@ main {
 .main-header .right span {
     color: #D1D7E0;
     font-size: 18px;
-    font-family: 'Poiret One', sans-serif;
+    font-family: 'Black Ops One', system-ui;
 }
 .main-nav {
     height: 5%;
@@ -97,6 +96,12 @@ main {
     background-color: #564f6f;
     cursor: pointer;
 }
+.project-box img{
+    width: 500px;
+    height: 500px;
+    background-color: #564f6f;
+    cursor: pointer;
+}
 
 .box-right {
     display: flex;
@@ -123,7 +128,7 @@ main {
     cursor: default;
 }
 #info {
-    font-family: 'Poiret One', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 16px;
     position: absolute;
     top: 120px;
@@ -154,7 +159,7 @@ main {
     justify-content: space-around;
 }
 #bottom {
-    font-family: 'Poiret One', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #D1D7E0;
     font-size: 15px;
     margin-top: 10px;
