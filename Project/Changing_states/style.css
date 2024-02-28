@@ -1,27 +1,41 @@
-:root {
+/* :root {
     --background-start: #22344E;
     --background-end: #B8D5FF;
-}
+} */
 * 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: background-color 0.3s linear;
+    /* transition: background-color 0.3s linear; */
 }
 
 body,
 html,
 .main,
-.box1,
-.box2,
-.box3 {
+.box1{
     width: 100%;
     height: 100%;
-    background: var(--background-start);
+    /* background: var(--background-start); */
 }
+
 .main {
     position: relative;
+}
+.background {
+    position: absolute; 
+    z-index: -1;
+    width: 100%; 
+    height: 230vh; 
+    top: 0;
+    left: 0;
+}
+.blue {
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    top: -115vh;
+    left: -48.8vw;
 }
 .box1 {
     position: relative;
@@ -29,21 +43,22 @@ html,
     width: 100%;
     display: flex;
     justify-content: center;
+    /* flex-direction: column; */
 }
 .cloud {
     position: relative;
     height: 100px;
     width: 330px;
-    top: 50vh;
+    top: 55vh;
     background: #fff;
     border-radius: 100px;
-    z-index: 100;
+    /* z-index: 100; */
     filter: drop-shadow(0 0 35px #fff);
 }
 .cloud::before {
-    content: '';
+    /* content: ''; */
     position: absolute;
-    top: -50px;
+    top: -40px;
     left: 40px;
     width: 110px;
     height: 110px;
@@ -53,8 +68,8 @@ html,
 }
 .text {
     position: absolute;
-    height: 20px;
-    top: 40px;
+    height: 475px;
+    top: 150px;
     line-height: 20px;
     text-transform: uppercase;
     color: #fff;
@@ -62,7 +77,7 @@ html,
     0 0 15px #fff,
     0 0 15px #fff;
     transform-origin: bottom;
-    animation: animate 2s linear forwards;
+    animation: animate 2.5s linear forwards;
 }
 
 @keyframes animate {
@@ -70,7 +85,7 @@ html,
     {
         transform:  translateY(0) scale(1);
     }
-    70%
+    55%
     {
         transform:  translateY(290px) scale(1);
     }
@@ -92,15 +107,6 @@ html,
     animation: spin 5s infinite;
     transform-origin: 50% 0;
     box-shadow: 0 24px 56px rgba(32, 47, 80, 0);
-}
-.box2::after {
-    content: "";
-    position: absolute;
-    height: 58%;
-    width: 100%;
-    background: var(--background-start);
-    bottom: 0;
-    border-radius: 0 0 10px 10px ;
 }
 @keyframes spin{
     30%{
@@ -164,28 +170,28 @@ html,
     position: relative;
     height: 100vh;
     width: 100%;
-    top: 100vh;
 }
-.boy {
+.child {
     position: relative;
     width: 100%; 
     height: 100vh; 
 }
-#boy img{
+/* #boy img{
     position: absolute;
     width: 250px;
     height: 500px;
     bottom: 30px;
     right: 50px;
-}
+} */
 .center {
+    position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: transparent;
     position: absolute;
-    bottom: 430px;
-    right: 180px;
+    bottom: 150px;
+    left: 580px;
     transform: translate(-50%, -50%);
   }
 
@@ -222,3 +228,60 @@ html,
     }
 }
 
+
+
+@media (max-width: 767px) {
+    .background {
+        height: 100vh;
+    }
+    .blue {
+        top: -50vh;
+        left: -38vw;
+        width: 95vw;
+        height: 85vh;
+    }
+   
+    .cloud {
+        top: 25vh; 
+        width: 165px; 
+        height: 50px;
+    }
+    .text {
+        width: 10px;
+        height: 20px;
+        line-height: 10px;
+        top: 45px;
+        left: -50px;
+    }
+    @keyframes animate {
+        0%
+        {
+            transform:  translateY(0) scale(1);
+        }
+        55%
+        {
+            transform:  translateY(200px) scale(1);
+        }
+        100%
+        {
+            transform:  translateY(290px) scale(0);
+        }
+    }
+    .box3 {
+        height: auto; 
+        max-height: 100vh; 
+    }
+    .child {
+        height: auto; 
+        max-height: 100vh; 
+    }
+    .center {
+        bottom: 75px;
+        left: 50%; 
+        top: -200px;
+        transform: translateX(-50%); 
+    }
+    .bubble {
+        font-size: 24px; /* 调整泡泡的大小 */
+    }
+}
